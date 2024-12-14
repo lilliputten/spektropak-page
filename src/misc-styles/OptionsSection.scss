@@ -1,26 +1,54 @@
 @use 'sass:color';
 
 .OptionsSection {
+  $borderColor: #ccc;
+  $lightBorderColor: color.change($borderColor, $alpha: 0.5);
+  $lightTextColor: #999;
   .content {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h4 {
+      color: $lightTextColor;
+      font-weight: bold;
+      padding-bottom: 1em;
+      border-bottom: 1px solid $lightBorderColor;
+      margin-bottom: 1em;
+      // letter-spacing: 0.015em;
+      line-height: 1.6;
+    }
+    .Info {
+      color: $lightTextColor;
+      letter-spacing: 0.5px;
+      font-style: italic;
+      font-weight: bold;
+      padding-top: 1em;
+      border-top: 1px solid $lightBorderColor;
+      margin-top: 1em;
+    }
+    .Fade {
+      opacity: 0.5;
+    }
   }
-  .Items {
+  .content > ul.Items {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    li {
-      $borderColor: #ccc;
+    > li {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 0;
-      border: 1px solid color.change($borderColor, $alpha: 0.5);
+      border: 1px solid $lightBorderColor;
       border-radius: 10px;
       overflow: hidden;
       transition: all var(--transitionTimeMs);
@@ -79,8 +107,11 @@
         background-image: url('../images/Options/Yandex.svg');
       }
       .collapse {
-        padding: 10px 20px;
-        padding-top: 15px;
+        padding: 20px;
+        padding-bottom: 10px;
+        > :first-child {
+          margin-top: 0;
+        }
         &:not(.show) {
           display: none;
         }

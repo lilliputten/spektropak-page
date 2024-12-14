@@ -14,23 +14,14 @@
   --appFolder: #{$appFolder};
   --uploadsFolder: #{$uploadsFolder};
 
-  --bgDarkColor: #{$bgDarkColor};
-  --bgDarkRGB: #{rgbComponents($bgDarkColor)};
-
-  --headerDarkColor: #{$headerDarkColor};
-  --headerDarkRGB: #{rgbComponents($headerDarkColor)};
-
-  --goldColor: #{$goldColor};
-  --goldRGB: #{rgbComponents($goldColor)};
+  --primaryColor: #{$primaryColor};
+  --primaryRGB: #{rgbComponents($primaryColor)};
 
   --grayLightColor: #{$grayLightColor};
-  --moodyMediumColor: #{$moodyMediumColor};
-  --buttonRedColor: #{$buttonRedColor};
 
   // Fonts...
 
-  --softFont: #{$softFont};
-  --softFontIt: #{$softFontIt};
+  // --softFont: #{$softFont};
 
   // Timeouts...
 

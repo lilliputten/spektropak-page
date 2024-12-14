@@ -17,12 +17,12 @@ import { initOptionsSection } from './OptionsSection';
 const appVersion = process.env.APP_VERSION;
 const isDebug = process.env.DEBUG;
 const isDev = process.env.DEV;
+
 // eslint-disable-next-line no-console
 const consoleMethod = isDebug || isDev ? console.warn : console.log;
 consoleMethod.call(console, appVersion);
 
 function initPage() {
-  // console.log('[root:initPage]');
   // Start subcomponents...
   initOptionsSection();
 }

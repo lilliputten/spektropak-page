@@ -5,22 +5,14 @@ $appId: 'delivery-options';
 $appFolder: 'page-#{$appId}';
 $uploadsFolder: 'upload/#{$appFolder}';
 
-$bgDarkColor: #131014;
-$headerDarkColor: #404040;
+$primaryColor: #f90;
+
 $grayLightColor: #cccccc;
 $grayBrightColor: #d9d9d9;
-$moodyMediumColor: #78909c;
-
-$goldColor: #a39675;
-$buttonRedColor: #8c1515;
-
-$whyDarkColor: #232023;
-$servicesDarkColor: #272a2f;
 
 // Fonts...
 
-$softFont: MinionPro-Regular, serif;
-$softFontIt: MinionPro-It, serif;
+// $softFont: MinionPro-Regular, serif;
 
 // Timeouts...
 
