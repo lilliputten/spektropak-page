@@ -1,0 +1,17 @@
+@use '../variables' as *;
+
+body {
+  background-color: var(--bgDarkColor);
+}
+
+.sidebar {
+  display: none;
+}
+.main {
+  color: #fff;
+  margin-bottom: 0;
+  .path {
+    display: none;
+  }
+}
+

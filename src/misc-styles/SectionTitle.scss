@@ -1,0 +1,26 @@
+// @use '../variables' as *;
+
+.SectionTitle {
+  color: #fff; // var(--goldColor);
+  font-size: 3em;
+  font-family: var(--softFontIt);
+  text-align: center;
+  position: relative;
+  span {
+    position: relative;
+    display: inline-block;
+    padding: 0 50px;
+    // padding: .75em 1.5em;
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      // border-bottom: 1px solid $buttonRedColor;
+      border-bottom: 1px solid var(--goldColor);
+      padding-top: 0.25em;
+      left: -50px;
+      right: -50px;
+    }
+  }
+}
+

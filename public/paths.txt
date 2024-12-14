@@ -1,0 +1,1 @@
+bitrix: bitrix/cache/js/s1/gvozdevsoft_corpgs_s1/
