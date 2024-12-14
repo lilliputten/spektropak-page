@@ -11,10 +11,7 @@ import './variables/variables-expose.scss';
 
 import './misc-styles';
 
-import { initRootNode } from './RootNode';
-// import { initHero } from './Hero';
-// import { initLazyImages } from './LazyImages';
-// import { initRequestFormModal } from './RequestFormModal';
+import { initOptionsSection } from './OptionsSection';
 
 // Print app info...
 const appVersion = process.env.APP_VERSION;
@@ -27,10 +24,7 @@ consoleMethod.call(console, appVersion);
 function initPage() {
   // console.log('[root:initPage]');
   // Start subcomponents...
-  // initLazyImages();
-  initRootNode();
-  // initHero();
-  // initRequestFormModal();
+  initOptionsSection();
 }
 
 window.addEventListener('load', initPage);

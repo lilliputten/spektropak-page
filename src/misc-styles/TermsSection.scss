@@ -1,0 +1,19 @@
+.TermsSection {
+  .Item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+  }
+
+  .Icon {
+    display: inline-block;
+    $size: 32px;
+    width: $size;
+    height: $size;
+    background-image: url('../images/TermsSectionIcon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

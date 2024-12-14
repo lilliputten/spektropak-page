@@ -60,12 +60,13 @@ function getAssetContent(asset) {
  */
 function getCompilationScriptsContent(compilation, opts = {}) {
   const { isDebug, isDev, useLocallyServedDevAssets } = opts;
-  console.log('[webpack.helpers:getCompilationScriptsContent]', {
-    isDebug,
-    isDev,
-    useLocallyServedDevAssets,
-    useInlineProdAssets,
-  });
+  /* console.log('[webpack.helpers:getCompilationScriptsContent]', {
+   *   isDebug,
+   *   isDev,
+   *   useLocallyServedDevAssets,
+   *   useInlineProdAssets,
+   * });
+   */
   if (isDev && useLocallyServedDevAssets) {
     return [
       '<!-- Locally linked scripts & styles -->',

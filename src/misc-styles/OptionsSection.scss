@@ -1,0 +1,93 @@
+@use 'sass:color';
+
+.OptionsSection {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .Items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    li {
+      $borderColor: #ccc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      border: 1px solid color.change($borderColor, $alpha: 0.5);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all var(--transitionTimeMs);
+      &:hover {
+        border-color: color.change($borderColor, $alpha: 1);
+      }
+      button {
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: transparent;
+        &,
+        .Text {
+          transition: all var(--transitionTimeMs);
+        }
+        .Icon {
+          display: inline-block;
+          width: 120px;
+          height: 52px;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-width: 120px;
+        }
+        .Text {
+          display: inline-block;
+          font-weight: bold;
+        }
+        &:hover {
+          background-color: color.change($borderColor, $alpha: 0.3);
+        }
+        &[aria-expanded='true'] {
+          background-color: color.change($borderColor, $alpha: 0.25);
+          &:hover {
+            background-color: color.change($borderColor, $alpha: 0.35);
+          }
+        }
+      }
+      &#Selfcare .Icon {
+        background-image: url('../images/Options/Selfcare.svg');
+      }
+      &#Provider .Icon {
+        background-image: url('../images/Options/Provider.svg');
+      }
+      &#Cdek .Icon {
+        background-image: url('../images/Options/Cdek.svg');
+      }
+      &#Dl .Icon {
+        background-image: url('../images/Options/Dl.svg');
+      }
+      &#Yandex .Icon {
+        background-image: url('../images/Options/Yandex.svg');
+      }
+      .collapse {
+        padding: 10px 20px;
+        padding-top: 15px;
+        &:not(.show) {
+          display: none;
+        }
+        &.show {
+          background-color: color.change($borderColor, $alpha: 0.1);
+        }
+      }
+    }
+  }
+}
