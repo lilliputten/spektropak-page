@@ -29,7 +29,10 @@ const {
   scriptsAssetFile,
   stylesAssetFile,
   appFolder,
+  uploadsFolder,
 } = require('./webpack.params');
+
+const maxAssetSize = 512000;
 
 /** Exclusions for copy plugin */
 const globOptions = {
@@ -143,9 +146,10 @@ module.exports = {
       // TODO: Exclude log, swap & temp files
       patterns: [
         // Files to copy...
-        { from: 'src/images', to: `uploads/${appFolder}/images`, globOptions },
+        { from: 'src/sample-page.html', to: ``, globOptions },
+        { from: 'src/images', to: `${uploadsFolder}/images`, globOptions },
         { from: 'public', globOptions },
-        // { from: 'public-uploads', to: `uploads/landing-for-owners`, globOptions },
+        // { from: 'public-uploads', to: `upload/landing-for-owners`, globOptions },
       ],
     }),
     new HtmlWebpackPlugin({
@@ -231,6 +235,11 @@ module.exports = {
         },
       }),
     ],
+  },
+  performance: {
+    hints: false,
+    maxAssetSize,
+    maxEntrypointSize: maxAssetSize,
   },
   output: {
     filename: scriptsAssetFile,

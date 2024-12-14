@@ -35,11 +35,11 @@ const projectHash = fs
   .trim();
 const outPath = isDev ? 'build-dev' : 'build';
 
+// Sync with `src/variables/variables.scss`
 const appId = 'delivery-options';
 const appFolder = `page-${appId}`;
-
 /** A folder to deploy all automatically and manually generated assets */
-const uploadsFolder = `uploads/${appFolder}`;
+const uploadsFolder = `upload/${appFolder}`;
 
 /** Assets target path */
 const assetsPath = `${uploadsFolder}/`;

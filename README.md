@@ -1,13 +1,28 @@
 <!--
-@since 2024.10.06, 22:56
-@changed 2024.10.06, 22:56
+@since 2024.12.14, 16:00
+@changed 2024.12.14, 20:04
 -->
 
-# Certifico tilda site compiling assets
+# spektropak page compiling assets
 
 TODO: Describe workflow here.
 
-- Version: 0.0.0
-- Last changes timestamp: 2024.12.14 17:25:40 +0300
+- Project info: v.0.0.0 / 2024.12.14 17:25:40 +0300
 
-TODO: Add the project description.
+Sample delpoy:
+
+- https://spektropak-page.lilliputten.ru/
+
+Start local dev server:
+
+```bash
+# Run concurrently:
+rm -Rf build*/ ; pnpm watch-build-dev
+pnpm serve-dev
+```
+
+Open in browser:
+
+```
+http://localhost:3000/index.html
+```

@@ -1,8 +1,9 @@
 // Colors...
 
-$appId: 'for-owners';
-$appFolder: 'landing-#{$appId}';
-$uploadsFolder: 'uploads/#{$appFolder}';
+// Sync with `webpack.params.js`
+$appId: 'delivery-options';
+$appFolder: 'page-#{$appId}';
+$uploadsFolder: 'upload/#{$appFolder}';
 
 $bgDarkColor: #131014;
 $headerDarkColor: #404040;

@@ -1,1 +1,2 @@
-bitrix: bitrix/cache/js/s1/gvozdevsoft_corpgs_s1/
+bitrix: /bitrix/cache/js/s1/gvozdevsoft_corpgs_s1/template_8a831c4aaffe468091940ffcf0e0f4a3/
+bitrix: /bitrix/cache/css/s1/gvozdevsoft_corpgs_s1/template_8a831c4aaffe468091940ffcf0e0f4a3/
