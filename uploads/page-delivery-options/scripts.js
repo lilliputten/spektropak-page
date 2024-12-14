@@ -1,0 +1,2 @@
+(()=>{"use strict";var e=function(){var e=navigator.userAgent,n=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(e);return n}();function n(n){e||(n.preventDefault(),$("html, body").animate({scrollTop:0},500))}console.log.call(console,"v.0.0.0 / 2024.12.14 17:25:40 +0300"),window.addEventListener("load",(function(){!function(){var e=document.querySelector(".main");e.classList.add("Root");var o=e.querySelector(".PhoneButton");o&&o.addEventListener("click",n)}()}))})();
+//# sourceMappingURL=scripts.js.map

@@ -1,0 +1,6 @@
+:root{--PROJECT-INFO: v.0.0.0 / 2024.12.14 17: 25: 40 +0300}
+:root{--appId: for-owners;--appFolder: landing-for-owners;--uploadsFolder: uploads/landing-for-owners;--bgDarkColor: #131014;--bgDarkRGB: 19 16 20;--headerDarkColor: #404040;--headerDarkRGB: 64 64 64;--goldColor: #a39675;--goldRGB: 163 150 117;--grayLightColor: #cccccc;--moodyMediumColor: #78909c;--buttonRedColor: #8c1515;--softFont: MinionPro-Regular, serif;--softFontIt: MinionPro-It, serif;--transitionTimeMs: 250ms;--animationTimeMs: 500ms;--disappearTimeMs: 1000ms}
+body{background-color:var(--bgDarkColor)}.sidebar{display:none}.main{color:#fff;margin-bottom:0}.main .path{display:none}
+.SectionTitle{color:#fff;font-size:3em;font-family:var(--softFontIt);text-align:center;position:relative}.SectionTitle span{position:relative;display:inline-block;padding:0 50px}.SectionTitle span:after{position:absolute;display:block;content:"";border-bottom:1px solid var(--goldColor);padding-top:.25em;left:-50px;right:-50px}
+
+/*# sourceMappingURL=styles.css.map*/
