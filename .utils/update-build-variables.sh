@@ -23,7 +23,7 @@ PROJECT_HASH="v.$VERSION-$TIMETAG"
 PROJECT_INFO="v.$VERSION / $TIMESTAMP"
 PROJECT_INFO_REP=`echo "$PROJECT_INFO" | sed 's,/,\\\\/,g'` # Quoted for replace, see below
 
-echo "Version/time: $PROJECT_INFO"
+echo "Updated project info: $PROJECT_INFO"
 
 if [ ! -z "${PROJECT_HASH_FILE}" ]; then
   echo "Creating '$PROJECT_HASH_FILE' file..."

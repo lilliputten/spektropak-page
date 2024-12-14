@@ -94,13 +94,13 @@ function getCompilationScriptsContent(compilation, opts = {}) {
   if (isDebug || useInlineProdAssets) {
     // Create inlined (base64-encoded) assets
     return [
-      `<!-- DEBUG: Injected scripts begin (${scriptsAssetFile}) -->`,
+      `<!-- Injected scripts begin (${scriptsAssetFile}) -->`,
       `<script type="text/javascript" src="data:text/javascript;base64,${btoa(scriptsContent)}"></script>`,
-      `<!-- DEBUG: Injected scripts end (${scriptsAssetFile}) -->`,
+      `<!-- Injected scripts end (${scriptsAssetFile}) -->`,
       '',
-      `<!-- DEBUG: Injected styles begin (${stylesAssetFile}) -->`,
+      `<!-- Injected styles begin (${stylesAssetFile}) -->`,
       `<link rel="stylesheet" type="text/css" href="data:text/css;base64,${btoa(stylesContent)}" />`,
-      `<!-- DEBUG: Injected styles end (${stylesAssetFile}) -->`,
+      `<!-- Injected styles end (${stylesAssetFile}) -->`,
     ].join('\n');
   }
   // Create embedded assets
