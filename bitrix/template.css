@@ -22,12 +22,12 @@
 .not-find {
 	margin-top: 1rem;
 	padding: .25rem;
-	background: #f7f7f7;	
+	background: #f7f7f7;
 }
 .not-find div {
 	border: 2px dashed #ececec;
 	padding: .25rem;
-	
+
 }
 .not-find .ttl {
 	text-align: center;
@@ -46,14 +46,14 @@
 	 text-align: center;
 	 padding: .75rem 0;
 	 width: 80%;
-	 color: white; 
+	 color: white;
 	 background: var(--main-template-color);
 }
 /* End */
 
 
 /* Start:/bitrix/templates/gvozdevsoft_corpgs_s1/css/reset.css?17011866051313*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -67,8 +67,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -79,7 +79,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -109,7 +109,7 @@ button, input[type=submit]{
 
 button, input[type=submit]:focus{
 	outline: none;
-} 
+}
 /* End */
 
 
@@ -194,7 +194,7 @@ button, input[type=submit]:focus{
 }
 .owl-theme .owl-nav .disabled {
     opacity: 0.5;
-    cursor: default; 
+    cursor: default;
 }
 .owl-theme .owl-dots {
 	position: absolute;
@@ -5043,7 +5043,7 @@ img.catalog-detail__img-img {
 }
 
 @media (max-width:768px){
-	
+
 	.minmenu {
 		display: block;
 		cursor: pointer;
@@ -5071,7 +5071,7 @@ img.catalog-detail__img-img {
 	#flvmenu > ul  li {
 		width: 100%;
 	}
-	
+
 	#flvmenu > ul > li > ul, #flvmenu > ul > li > ul > li > ul, #flvmenu > ul > li > ul > li > ul > li > ul {
 		display: block;
 		position: relative;
@@ -5082,7 +5082,7 @@ img.catalog-detail__img-img {
 	#flvmenu > ul > li > ul > li, #flvmenu > ul > li > ul > li > ul > li, #flvmenu > ul > li > ul > li > ul > li > ul > li{
 		width: auto;
 	}
-	
+
 	/* block style */
 	#flvmenu > ul {
 		background-color: #2c4668;
@@ -5193,7 +5193,7 @@ div.menu-clear-left
 	top:18px
 }
 .accordion .title_block:hover {
-	background: #9d9cab  
+	background: #9d9cab
 }
 
 .accordion .active_block .title_block {
@@ -5441,16 +5441,16 @@ div.menu-clear-left
 
 /* Start:/bitrix/templates/gvozdevsoft_corpgs_s1/lib/img-zoom/img-zoom.css?1701186605682*/
 .img_zoom {
-	width:100%; 
+	width:100%;
 	overflow:hidden;
 }
 
 .img_zoom a {
-	position:relative; 
+	position:relative;
 	float:left;
 }
 
-.img_zoom a span::before { 
+.img_zoom a span::before {
 	color: #fff;
     content: "\f00e";
     display: inline-block;
@@ -5892,7 +5892,7 @@ a {color: var(--main-template-color);}
 /* new */
 .section-repair__element:before {color: var(--main-template-color);}
 .section-repair__link-link {background: var(--main-template-color);}
-.form-measure__text ul li:before {color: var(--main-template-color);} 
+.form-measure__text ul li:before {color: var(--main-template-color);}
 .section-link-all-center {border-color:var(--main-template-color);}
 #sidebar_prais .block .fa {color: var(--main-template-color);}
 .bx-pagination .bx-pagination-container ul li.bx-active span {background-color: var(--main-template-color);}
@@ -6343,7 +6343,7 @@ ul#vertical-multilevel-menu li a {
     font-size: 18px;
     font-weight: normal;
     position: relative;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 #section_element_menu ul#vertical-multilevel-menu li.menu-element-items > a.parent::before{
     color: #000;
@@ -6352,7 +6352,7 @@ ul#vertical-multilevel-menu li a {
     font-size: 18px;
     font-weight: normal;
     position: relative;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 #section_element_menu ul#vertical-multilevel-menu > li.menu-section-active2 > a::before {
     color: #fff;
@@ -6361,7 +6361,7 @@ ul#vertical-multilevel-menu li a {
     font-size: 18px;
     font-weight: normal;
     position: relative;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 #section_element_menu ul#vertical-multilevel-menu li.menu-element-items-active2 > a.parent::before {
     color: #fff;
@@ -6370,7 +6370,7 @@ ul#vertical-multilevel-menu li a {
     font-size: 18px;
     font-weight: normal;
     position: relative;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 #section_element_menu ul#vertical-multilevel-menu > li.menu-section-drive-active > a::before {
     color: #fff;
@@ -6379,7 +6379,7 @@ ul#vertical-multilevel-menu li a {
     font-size: 18px;
     font-weight: normal;
     position: relative;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 #section_element_menu .menu-element-list {
     display:none;
