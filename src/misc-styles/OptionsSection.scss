@@ -80,6 +80,8 @@
         .Text {
           display: inline-block;
           font-weight: bold;
+          text-align: left;
+          flex: 1;
         }
         &:hover {
           background-color: color.change($borderColor, $alpha: 0.3);

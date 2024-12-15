@@ -8,6 +8,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const packageData = require(path.resolve(__dirname, 'package.json'));
+
 const isDev = getTruthy(process.env.DEV);
 const isDebug = getTruthy(process.env.DEBUG);
 
@@ -24,6 +26,8 @@ const generateSourcesForProduction = true;
 
 const includeTemplateFile = 'src/include-template.html';
 const previewTemplateFile = 'src/preview-template-base.html';
+
+const projectName = packageData.name;
 
 const projectInfoFile = 'public/project-info.txt';
 const projectHashFile = 'public/project-hash.txt';
@@ -98,6 +102,7 @@ module.exports = {
   generateSourcesForProduction,
 
   // projectInfoFile,
+  projectName,
   projectInfo,
   projectHash,
   outPath,

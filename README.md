@@ -7,7 +7,7 @@
 
 TODO: Describe workflow here.
 
-- Project info: v.0.0.1 / 2024.12.15 01:44:06 +0300
+- Project info: v.0.0.1 / 2024.12.16 00:11:01 +0300
 
 Sample delpoy:
 

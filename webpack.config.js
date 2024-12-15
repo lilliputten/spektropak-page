@@ -20,6 +20,7 @@ const {
   isDev,
   isDebug,
   useLocallyServedDevAssets,
+  projectName,
   projectInfo,
   outPath,
   includeTemplateFile,
@@ -168,7 +169,7 @@ module.exports = {
         });
         return [
           // Combine template...
-          '<!-- ' + projectInfo + ' -->',
+          `<!-- ${projectName} @ ${projectInfo} -->`,
           '',
           includeFragment,
           '',
@@ -197,7 +198,7 @@ module.exports = {
           .replace('{{CONTENT}}', includeFragment);
         return [
           // Combine template...
-          '<!-- ' + projectInfo + ' -->',
+          `<!-- ${projectName} @ ${projectInfo} -->`,
           '',
           previewFragment,
           '',
